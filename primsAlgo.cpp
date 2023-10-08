@@ -4,8 +4,6 @@
 #include <functional> 
 using namespace std;
 
- 
- 
 typedef pair<int, int> Pair; 
 const int numVertices = 4; 
 vector <bool> visitedVertex(numVertices, false);
@@ -36,7 +34,7 @@ void PrimsAlgorithm(vector <Pair> adjList[], int source){
    cout << "Minimum cost to connect all vertices : " << minCost << endl;
 } 
 
-int main (){
+int main (void){
   
   int source = 0;
   vector<Pair> adjList[numVertices]; 
